@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, hsl(243, 99%, 49%), #e64343, #0306ba);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.calculator {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.calculator h1 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calculator h1 span {
+  color: #ffff76;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-box input {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.input-box button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #ffff76;
+  color: #222;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-box button:hover {
+  background: #fff44f;
+}
+
+#resultBox {
+  margin-top: 25px;
+}
+
+#resultBox p {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  backdrop-filter: blur(3px);
+}
+
+#generateCardBtn,
+#downloadCardBtn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #ffff76;
+  color: #222;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#generateCardBtn:hover,
+#downloadCardBtn:hover {
+  background: #fff44f;
+}
+
+/* Make canvas rounded and responsive */
+canvas {
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .calculator {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .calculator h1 {
+    font-size: 32px;
+  }
+
+  .input-box input {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .input-box button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  #resultBox p {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  #generateCardBtn,
+  #downloadCardBtn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+.hidden {
+  display: none;
+}
